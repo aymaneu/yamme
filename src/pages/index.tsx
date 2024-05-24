@@ -1,13 +1,12 @@
-import { cn } from "@/utils/cn";
-import Header, { playfair } from "../components/header";
-import HeroImage from "@/../public/heroImg.webp";
-import Image from "next/image";
 import HeroSection from "@/components/heroSection";
+import Header from "../components/header";
+import Ranking from "@/components/ranking";
 export default function Home() {
   return (
-    <main className="max-w-5xl min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
+    <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <Header />
       <HeroSection />
+      <Ranking />
     </main>
   );
 }

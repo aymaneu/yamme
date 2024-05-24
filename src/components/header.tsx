@@ -9,7 +9,12 @@ import { cn } from "@/utils/cn";
 export const playfair = Playfair({ subsets: ["latin"] });
 const Header = () => {
   return (
-    <div className={cn(playfair.className, "flex justify-between  px-5 py-4")}>
+    <div
+      className={cn(
+        playfair.className,
+        "flex fixed w-full max-w-5xl z-40 top-0 justify-between px-5 py-4"
+      )}
+    >
       <p className="italic text-2xl font-semibold text-subOrange">Grace</p>
       <div className="flex gap-4">
         {info.map((links) => (
