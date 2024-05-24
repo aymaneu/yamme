@@ -2,7 +2,17 @@ import HeroImage from "@/../public/heroImg.webp";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 import { playfair } from "../components/header";
+import { useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
+import { useBooleanContext } from "@/contexts/BooleanContext";
 const HeroSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-55px 0px 0px 0px" });
+  const { setBooleanState } = useBooleanContext();
+  useEffect(() => {
+    setBooleanState(isInView);
+  }, [isInView, setBooleanState]);
+
   return (
     <div>
       <p
@@ -20,6 +30,7 @@ const HeroSection = () => {
       </p>
       <div className="flex justify-center">
         <button
+          ref={ref}
           className={cn(
             playfair.className,
             "bg-subOrange border border-subOrange px-4 py-2 rounded-md italic hover:text-subOrange hover:border-subOrange hover:bg-background text-background"
