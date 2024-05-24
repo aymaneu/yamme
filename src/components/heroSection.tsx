@@ -17,7 +17,7 @@ const HeroSection = () => {
     <div>
       <p
         className={cn(
-          "italic text-center text-[4rem] mt-10 text-subOrange",
+          "italic text-center text-[4rem] pt-36 text-subOrange",
           playfair.className
         )}
       >

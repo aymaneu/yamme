@@ -15,7 +15,7 @@ const Header = () => {
     <div
       className={cn(
         playfair.className,
-        "flex fixed w-full shadow-lg shadow-subOrange/20 max-w-5xl z-40 top-0 justify-between px-5 py-4"
+        "flex fixed w-full shadow-lg shadow-subOrange/15 max-w-5xl z-40 top-0 justify-between px-5 py-4"
       )}
     >
       <p className="italic text-2xl font-semibold text-subOrange">Grace</p>
