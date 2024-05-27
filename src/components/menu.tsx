@@ -32,7 +32,7 @@ const Menu = () => {
         Our Menu
       </p>
       <div className="pt-10">
-        <div className="flex sticky z-50 bg-background pt-5 top-16 h-full items-center border-b justify-center gap-5 border-b-subOrange border-dashed mb-5">
+        <div className="flex sticky z-20 bg-background pt-5 top-16 h-full items-center border-b justify-center gap-5 border-b-subOrange border-dashed mb-5">
           {content.map((i) => {
             return (
               <Link
@@ -47,7 +47,7 @@ const Menu = () => {
         </div>
         <div>
           {content.map((j) => (
-            <div className="mt-36 z-20" key={j.label}>
+            <div className="mt-36 z-10" key={j.label}>
               <p
                 className={cn(
                   "text-center mb-10 text-secondary/50 text-2xl italic",
