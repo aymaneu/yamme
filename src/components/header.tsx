@@ -7,7 +7,7 @@ import Instagram from "./icons/instagram";
 import { cn } from "@/utils/cn";
 import { useBooleanContext } from "@/contexts/BooleanContext";
 import { motion } from "framer-motion";
-export const playfair = Playfair({ subsets: ["latin"] });
+export const playfair = Playfair({ subsets: ["latin"], style: "italic" });
 const Header = () => {
   const { booleanState } = useBooleanContext();
   return (

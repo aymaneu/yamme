@@ -48,7 +48,6 @@ const Menu = () => {
     saladsRefView,
     sidesRefView,
   ]);
-  console.log(currentSec);
   return (
     <div>
       <p
@@ -67,7 +66,7 @@ const Menu = () => {
                 className={cn(
                   " p-2 rounded-t-md border-t border-l border-r",
                   currentSec === i.label
-                    ? "border-dashed border-subOrange"
+                    ? "border-dashed text-subOrange border-subOrange"
                     : "border-background"
                 )}
                 href={i.link}
