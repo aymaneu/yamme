@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 export const playfair = Playfair({ subsets: ["latin"] });
 const Header = () => {
   const { booleanState } = useBooleanContext();
-  console.log(booleanState);
   return (
     <div
       className={cn(
