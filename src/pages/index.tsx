@@ -4,6 +4,7 @@ import Ranking from "@/components/ranking";
 import Menu from "@/components/menu";
 import Table from "@/components/table";
 import AboutUs from "@/components/aboutUs";
+import Blog from "@/components/blog";
 export default function Home() {
   return (
     <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
@@ -13,6 +14,7 @@ export default function Home() {
       <Menu />
       <Table />
       <AboutUs />
+      <Blog />
     </main>
   );
 }

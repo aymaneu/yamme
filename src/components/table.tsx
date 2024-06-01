@@ -27,7 +27,7 @@ const Table = () => {
     // Map x from these values:
     [0, 1],
     // Into these values:
-    ["0%", "-10%"]
+    ["0%", "-30%"]
   );
 
   return (
@@ -46,11 +46,9 @@ const Table = () => {
 
         <Button>Book a Table</Button>
       </div>
-      <div
-        ref={carouselRef}
-        className="w-full rounded-xl h-[35rem] overflow-clip"
-      >
+      <div className="w-full rounded-xl h-[35rem] overflow-clip">
         <motion.img
+          ref={carouselRef}
           style={{ translateY: translateY }}
           src={"/tabels.webp"}
           className="scale-125 px-8 object-bottom w-full"
