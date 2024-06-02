@@ -6,7 +6,7 @@ import secondChef from "@/../public/secondChef.jpeg";
 import thirdChef from "@/../public/thirdChef.jpeg";
 import forthChef from "@/../public/forthChef.jpeg";
 import Image from "next/image";
-const playfair = Playfair({
+export const playfair = Playfair({
   subsets: ["cyrillic"],
   style: "italic",
 });
