@@ -1,7 +1,84 @@
+import { cn } from "@/utils/cn";
 import React from "react";
+import { playfair } from "./aboutUs";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <div>
+      <p
+        className={cn(
+          "text-center text-subOrange text-[2.5rem]",
+          playfair.className
+        )}
+      >
+        Grace
+      </p>
+      <p className="text-center">
+        Grace is a culinary sanctuary nestled in the heart of New York, where
+        <br />
+        refined elegance meets unparalleled gastronomy.
+      </p>
+      <div className="border-t border-b border-subOrange border-dashed max-w-lg mx-auto my-10 py-10">
+        <p
+          className={cn(
+            "text-center text-subOrange text-2xl",
+            playfair.className
+          )}
+        >
+          Pages
+        </p>
+        <div
+          className={cn(
+            "flex hover:*:text-subOrange *:cursor-pointer justify-center gap-5",
+            playfair.className
+          )}
+        >
+          <p>Home</p>
+          <p>Blog</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+      <div className="border-dashed border-subOrange border-b">
+        <div className="max-w-3xl flex mx-auto pb-10 justify-around">
+          <div className="px-5">
+            <p className="text-subOrange">Email:</p>
+            <p
+              className={cn(
+                "hover:text-subOrange cursor-pointer",
+                playfair.className
+              )}
+            >
+              info@grace.com
+            </p>
+          </div>
+          <div className="border-l px-5 border-dashed border-subOrange">
+            <p className="text-subOrange">Phone:</p>
+            <p
+              className={cn(
+                "hover:text-subOrange cursor-pointer",
+                playfair.className
+              )}
+            >
+              (123) 456 7890
+            </p>
+          </div>
+          <div className="border-l px-5 border-dashed border-subOrange">
+            <p className="text-subOrange">Socials:</p>
+            <div className={cn("flex gap-3", playfair.className)}>
+              <p className="hover:text-subOrange cursor-pointer">X/Twitter</p>
+              <p className="hover:text-subOrange cursor-pointer">Instagram</p>
+              <p className="hover:text-subOrange cursor-pointer">Facebook</p>
+              <p className="hover:text-subOrange cursor-pointer">TikTok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between p-5">
+        <p>designed by Thaer developed by ayman</p>
+        <p className="text-sm text-secondary/50">© Copyright 2024</p>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
