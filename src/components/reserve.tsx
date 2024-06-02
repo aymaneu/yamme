@@ -1,12 +1,25 @@
-import React from "react";
-import { playfair } from "./aboutUs";
 import { cn } from "@/utils/cn";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { playfair } from "./aboutUs";
 import Calendar from "./icons/calendar";
 import Clock from "./icons/clock";
 import Person from "./icons/person";
+import PoweredBy from "./icons/poweredBy";
 import SmallArrow from "./icons/smallArrow";
-
 const Reserve = () => {
+  const carouselRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: carouselRef,
+    offset: ["start end", "end end"],
+  });
+  const translateY = useTransform(
+    scrollYProgress,
+    // Map x from these values:
+    [0, 1],
+    // Into these values:
+    ["0%", "-30%"]
+  );
   return (
     <div>
       <div className="text-center">
@@ -19,8 +32,8 @@ const Reserve = () => {
           <br /> joining us for an unforgettable dining experience.
         </p>
       </div>
-      <div className="grid py-16 grid-cols-3 justify-items-center">
-        <div className="border border-dashed max-w-64 w-full border-subOrange rounded-xl py-2 px-4">
+      <div className="grid max-w-4xl gap-5 mx-auto py-16 grid-cols-3 justify-items-center">
+        <div className="border justify-around flex flex-col border-dashed max-w-64 w-full border-subOrange rounded-xl py-2 px-4">
           <p className="text-lg font-bold text-center">Make a Reservation</p>
           <div className="border border-secondary/50 rounded-md">
             <div className="flex items-center justify-between px-3 py-2 border-b border-secondary/50">
@@ -47,6 +60,9 @@ const Reserve = () => {
             <button className="bg-[#D83340] rounded-b-md text-white w-full py-2">
               Find Table
             </button>
+          </div>
+          <div className="flex  flex-col items-center">
+            <PoweredBy className="w-28" />
           </div>
         </div>
         <div className="border-r flex flex-col gap-3 items-center border-l border-dashed border-subOrange w-full text-center">
@@ -80,6 +96,19 @@ const Reserve = () => {
             Get Direction
           </button>
         </div>
+        <iframe
+          className="h-full border border-dashed border-subOrange rounded-xl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.2359700069837!2d-7.516455327482043!3d33.595681843178625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cb68bc3234ed%3A0x9e4b84f2076975e8!2sR%C3%A9s%20El%20kawtar!5e0!3m2!1sen!2sma!4v1717356441046!5m2!1sen!2sma"
+          loading="lazy"
+        />
+      </div>
+      <div className="w-full rounded-xl h-[35rem] overflow-clip">
+        <motion.img
+          ref={carouselRef}
+          style={{ translateY: translateY }}
+          src={"/wine.jpeg"}
+          className="scale-125 px-8 object-bottom w-full"
+        />
       </div>
     </div>
   );

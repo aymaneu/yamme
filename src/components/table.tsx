@@ -1,16 +1,8 @@
-import React, { useRef, useState } from "react";
-import Button from "./ui/Button";
 import { cn } from "@/utils/cn";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Playfair } from "next/font/google";
-import tables from "@/../public/tabels.webp";
-import Image from "next/image";
-import {
-  useScroll,
-  motion,
-  useTransform,
-  useMotionValueEvent,
-  MotionValue,
-} from "framer-motion";
+import { useRef } from "react";
+import Button from "./ui/Button";
 const playfair = Playfair({
   subsets: ["cyrillic"],
   style: "italic",
