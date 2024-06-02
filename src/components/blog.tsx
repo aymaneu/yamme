@@ -60,6 +60,21 @@ const Blog = () => {
           );
         })}
       </div>
+      <div
+        className={cn(
+          "flex flex-col gap-3 max-w-2xl mx-auto items-center my-16 py-10 border-t border-b border-dashed border-subOrange",
+          playfair.className
+        )}
+      >
+        <p className="text-center text-2xl text-subOrange">
+          From mouthwatering dishes to insider tips and behind-the-
+          <br />
+          scenes glimpses into the culinary world.
+        </p>
+        <button className="border w-fit px-14 hover:border-subOrange hover:text-subOrange py-2 rounded-md border-black">
+          Visit Our Blog
+        </button>
+      </div>
     </div>
   );
 };
