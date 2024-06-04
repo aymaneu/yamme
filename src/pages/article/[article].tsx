@@ -10,9 +10,11 @@ import Blog from "@/components/blog";
 const Article = () => {
   return (
     <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
-      <Header />
-      <Hero />
-      <Blog />
+      <div className="border-b border-dashed border-subOrange">
+        <Header />
+        <Hero />
+        <Blog border />
+      </div>
       <Footer />
     </main>
   );

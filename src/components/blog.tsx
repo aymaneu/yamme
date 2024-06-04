@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 import { playfair } from "./aboutUs";
 import Link from "next/link";
 
-const Blog = () => {
+const Blog = ({ border = false }: { border?: boolean }) => {
   return (
     <div>
       <p
@@ -63,8 +63,9 @@ const Blog = () => {
       </div>
       <div
         className={cn(
-          "flex flex-col gap-3 max-w-2xl mx-auto items-center my-16 py-10 border-t border-b border-dashed border-subOrange",
-          playfair.className
+          "flex flex-col gap-3 max-w-2xl mx-auto items-center border-t border-dashed border-subOrange",
+          playfair.className,
+          border ? "py-10" : "border-b my-16 py-10 "
         )}
       >
         <p className="text-center text-2xl text-subOrange">
