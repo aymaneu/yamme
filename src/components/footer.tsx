@@ -48,7 +48,7 @@ const Footer = () => {
                 playfair.className
               )}
             >
-              info@grace.com
+              aymanelgad65@gmail.com
             </p>
           </div>
           <div className="border-l px-5 border-dashed border-subOrange">
@@ -59,7 +59,7 @@ const Footer = () => {
                 playfair.className
               )}
             >
-              (123) 456 7890
+              (212) 06800-93003
             </p>
           </div>
           <div className="border-l px-5 border-dashed border-subOrange">
@@ -74,7 +74,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between p-5">
-        <p>designed by Thaer developed by ayman</p>
+        <p className="font-light text-secondary/70">
+          designed by <span className="font-normal text-secondary">Thaer</span>{" "}
+          developed by <span className="font-normal text-secondary">ayman</span>
+        </p>
         <p className="text-sm text-secondary/50">© Copyright 2024</p>
       </div>
     </div>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Arrow from "./icons/arrow";
 import { cn } from "@/utils/cn";
 import { playfair } from "./aboutUs";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -17,46 +18,46 @@ const Blog = () => {
       <div className="flex flex-col px-28 gap-8">
         {content.map((j) => {
           return (
-            <motion.div
-              className="flex gap-5 w-full"
-              whileHover="hovered"
-              key={j.label}
-            >
-              <div className="rounded-md shrink-0 relative overflow-x-hidden h-[15rem] w-[15rem]">
-                <motion.img
-                  initial={{ right: "0px" }}
-                  variants={{ hovered: { right: "-30px" } }}
-                  src={j.image}
-                  alt="image"
-                  className="h-[15rem] w-[18rem] overflow-visible object-right object-cover absolute "
-                />
-              </div>
-              <div className="text-subOrange">
-                <div className="flex items-center w-full justify-between">
-                  <p className={cn(playfair.className, "text-lg")}>{j.date}</p>
-                  <motion.div
-                    initial={{ marginRight: "80px", opacity: 0 }}
-                    variants={{ hovered: { marginRight: "0px", opacity: 1 } }}
-                    transition={{ ease: "easeInOut" }}
-                    className="flex items-center gap-1"
-                  >
-                    <p className="shrink-0 text-xs">View Article</p>
-                    <Arrow className="fill-subOrange w-4" />
-                  </motion.div>
+            <Link href={`/article/${j.label}`} key={j.label}>
+              <motion.div className="flex gap-5 w-full" whileHover="hovered">
+                <div className="rounded-md shrink-0 relative overflow-x-hidden h-[15rem] w-[15rem]">
+                  <motion.img
+                    initial={{ right: "0px" }}
+                    variants={{ hovered: { right: "-30px" } }}
+                    src={j.image}
+                    alt="image"
+                    className="h-[15rem] w-[18rem] overflow-visible object-right object-cover absolute "
+                  />
                 </div>
-                <div>
-                  <p
-                    className={cn(
-                      "border-b text-2xl border-dashed border-subOrange",
-                      playfair.className
-                    )}
-                  >
-                    {j.label}
-                  </p>
-                  <p className="text-gray-500">{j.description}</p>
+                <div className="text-subOrange">
+                  <div className="flex items-center w-full justify-between">
+                    <p className={cn(playfair.className, "text-lg")}>
+                      {j.date}
+                    </p>
+                    <motion.div
+                      initial={{ marginRight: "80px", opacity: 0 }}
+                      variants={{ hovered: { marginRight: "0px", opacity: 1 } }}
+                      transition={{ ease: "easeInOut" }}
+                      className="flex items-center gap-1"
+                    >
+                      <p className="shrink-0 text-xs">View Article</p>
+                      <Arrow className="fill-subOrange w-4" />
+                    </motion.div>
+                  </div>
+                  <div>
+                    <p
+                      className={cn(
+                        "border-b text-2xl border-dashed border-subOrange",
+                        playfair.className
+                      )}
+                    >
+                      {j.label}
+                    </p>
+                    <p className="text-gray-500">{j.description}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           );
         })}
       </div>
