@@ -7,13 +7,17 @@ import { cn } from "@/utils/cn";
 import { playfair } from "@/components/aboutUs";
 import { motion } from "framer-motion";
 import Blog from "@/components/blog";
+import { useRouter } from "next/router";
 const Article = () => {
+  const router = useRouter().query;
+  const { article } = router;
+  console.log(article);
   return (
     <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <div className="border-b border-dashed border-subOrange">
         <Header />
         <Hero />
-        <Blog border />
+        <Blog border query={article as string} />
       </div>
       <Footer />
     </main>
