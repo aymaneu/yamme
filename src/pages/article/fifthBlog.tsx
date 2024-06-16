@@ -40,16 +40,17 @@ const Hero = () => {
           playfair.className
         )}
       >
-        Behind the Scenes: A Day in the Life of a<br /> Chef at Grace
+        The History of Fine Dining: From Ancient
+        <br /> Feasts to Modern Gastronomy
       </p>
       <p className="text-center text-secondary/50">
-        This article would offer readers a behind-the-scenes look at the inner
-        workings of
-        <br /> Grace&apos;s kitchen, following a chef through a typical day of
-        prep, cooking, and service. It
-        <br /> could include interviews with staff members and insights into the
-        creative process
-        <br /> behind crafting the restaurant&apos;s signature dishes.
+        We delve into the rich history of fine dining, tracing its evolution
+        from ancient banquet
+        <br /> halls to the Michelin-starred restaurants of today. It could
+        explore key moments and
+        <br /> figures in culinary history, as well as trends and innovations
+        that have shaped the
+        <br /> dining landscape over the centuries.
       </p>
       <div className="w-full shadow-xl shadow-subOrange/20 mt-14 rounded-xl h-[30rem] max-w-[60rem] mx-auto overflow-clip">
         <motion.img

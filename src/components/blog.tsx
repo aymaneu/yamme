@@ -7,9 +7,11 @@ import Link from "next/link";
 const Blog = ({
   border = false,
   query,
+  changed,
 }: {
   border?: boolean;
   query?: string;
+  changed?: string;
 }) => {
   return (
     <div>
@@ -19,7 +21,7 @@ const Blog = ({
           "text-center py-14 text-[2.5rem] text-subOrange"
         )}
       >
-        Recent Blog Posts
+        {changed ? "Similar Articles" : "Recent Blog Posts"}
       </p>
       <div className="flex flex-col px-28 gap-8">
         {content
@@ -105,7 +107,7 @@ const content = [
   },
   {
     link: "secondBlog",
-    image: "secBlog.jpeg",
+    image: "/secBlog.jpeg",
     date: "Feb 7, 2024",
     label:
       "The Art of Hosting: Tips for Throwing an Elegant Dinner Party at Home",
@@ -114,7 +116,7 @@ const content = [
   },
   {
     link: "thirdBlog",
-    image: "thirdBlog.jpeg",
+    image: "/thirdBlog.jpeg",
     date: "Feb 16, 2024",
     label: "Behind the Scenes: A Day in the Life of a Chef at Grace",
     description:
@@ -122,7 +124,7 @@ const content = [
   },
   {
     link: "forthBlog",
-    image: "forthBlog.jpeg",
+    image: "/forthBlog.jpeg",
     date: "Feb 13, 2024",
     label:
       "The Rise of Plant-Based Dining: Navigating the World of Vegan and Vegetarian Cuisine",
