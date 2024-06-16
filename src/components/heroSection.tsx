@@ -17,16 +17,17 @@ const HeroSection = () => {
     <div>
       <p
         className={cn(
-          "italic text-center text-[4rem] pt-36 text-subOrange",
+          "italic text-center md:text-[4rem] text-[2.5rem] pt-36 text-subOrange",
           playfair.className
         )}
       >
         Discover Divine Dining at Grace
       </p>
-      <p className="text-center mb-9 text-secondary/50">
+      <p className="text-center text-sm mb-9 text-secondary/50">
         Grace is a culinary sanctuary nestled in the heart of New York, where
         refined
-        <br /> elegance meets unparalleled gastronomy.
+        <br className="md:block hidden" /> elegance meets unparalleled
+        gastronomy.
       </p>
       <div className="flex justify-center">
         <button
@@ -39,7 +40,7 @@ const HeroSection = () => {
           Make a Reservation
         </button>
       </div>
-      <div className="w-full mt-14 px-10 h-[28rem]">
+      <div className="w-full mt-14 md:px-10 px-3 h-[28rem]">
         <Image
           src={HeroImage}
           alt="image"

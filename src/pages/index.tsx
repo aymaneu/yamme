@@ -10,7 +10,7 @@ import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 export default function Home() {
   return (
-    <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
+    <main className="md:max-w-5xl max-w-md h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <Header />
       <HeroSection />
       <Ranking />
