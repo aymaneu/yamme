@@ -34,8 +34,8 @@ const Footer = () => {
             playfair.className
           )}
         >
-          <p>Home</p>
-          <p>Blog</p>
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>

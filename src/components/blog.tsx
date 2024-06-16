@@ -8,8 +8,10 @@ const Blog = ({
   border = false,
   query,
   changed,
+  blogPage = false,
 }: {
   border?: boolean;
+  blogPage?: boolean;
   query?: string;
   changed?: string;
 }) => {
@@ -23,6 +25,14 @@ const Blog = ({
       >
         {changed ? "Similar Articles" : "Recent Blog Posts"}
       </p>
+      {blogPage && (
+        <p className="text-center text-gray-500/80 mb-10">
+          From mouthwatering dishes to insider tips and behind-the-scenes
+          glimpses
+          <br />
+          into the culinary world.
+        </p>
+      )}
       <div className="flex flex-col px-28 gap-8">
         {content
           .filter((n) => n.label !== query)
