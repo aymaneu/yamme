@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
 import React from "react";
-import piko from "@/../public/foodie.jpeg";
+import piko from "@/../public/group.jpeg";
 import { cn } from "@/utils/cn";
 import { playfair } from "@/components/aboutUs";
 import { motion } from "framer-motion";
@@ -17,7 +17,12 @@ const Article = () => {
       <div className="border-b border-dashed border-subOrange">
         <Header />
         <Hero />
-        <Blog border query={article as string} />
+        <Blog
+          border
+          query={article as string}
+          changed="Similar Articles
+"
+        />
       </div>
       <Footer />
     </main>
@@ -61,50 +66,54 @@ const Hero = () => {
             duration: 2.2,
             bounce: true,
           }}
-          src={"/thirdBlog.jpeg"}
+          src={"/secBlog.jpeg"}
         />
       </div>
       <div className="max-w-2xl mx-auto">
         <div className="border-t block my-16 max-w-xl mx-auto border-dashed border-subOrange" />
         <div className="flex flex-col pb-16 gap-4">
           <p className="text-base text-secondary/60 leading-snug">
-            Have you ever wondered what goes on behind the scenes in a bustling
-            restaurant kitchen? From the sizzle of pans to the aroma of fresh
-            herbs, the world of professional cooking is a symphony of sights,
-            sounds, and flavors. In this article, we&apos;ll take you behind the
-            scenes at Grace, offering a glimpse into the daily life of a chef
-            and the artistry that goes into creating exquisite culinary
-            experiences.
+            There&apos;s something truly special about gathering friends and
+            loved ones together for a dinner party at home. From the warm
+            ambiance to the delicious food and lively conversation, hosting a
+            dinner party allows you to create cherished memories and celebrate
+            life&apos;s simple pleasures. In this article, we&apos;ll share some
+            expert tips for throwing an elegant dinner party that will impress
+            your guests and make you feel like a seasoned host.
+          </p>
+          <h4 className="text-base text-secondary/90 italic">1. Plan Ahead</h4>
+          <p className="text-base text-secondary/60 leading-snug">
+            The key to a successful dinner party is careful planning. Start by
+            selecting a date and sending out invitations well in advance, giving
+            your guests plenty of time to RSVP. Consider the size of your space
+            and the number of guests you can comfortably accommodate, and plan
+            your menu accordingly. Take into account any dietary restrictions or
+            preferences your guests may have, and tailor your menu to
+            accommodate them.
           </p>
           <h4 className="text-base text-secondary/90 italic">
-            Early Morning Prep
+            2. Set the Scene
           </h4>
           <p className="text-base text-secondary/60 leading-snug">
-            The day at Grace begins bright and early, as the kitchen team
-            arrives to prepare for the day ahead. The executive chef leads the
-            morning briefing, discussing the day&apos;s specials, reviewing
-            reservations, and delegating tasks to the kitchen staff. Meanwhile,
-            prep cooks busily chop vegetables, prepare sauces, and marinate
-            meats, ensuring that everything is ready for service.
+            Create a welcoming atmosphere by setting a beautiful table that
+            reflects your personal style and the theme of your dinner party.
+            Invest in quality linens, tableware, and centerpiece arrangements
+            that will set the tone for the evening. Consider adding candles or
+            string lights to create a warm, inviting glow, and don&apos;t forget
+            to set out small touches like place cards and napkin rings to add an
+            extra layer of elegance.
           </p>
-          <h4 className="text-base text-secondary/90 italic">Lunch Service</h4>
+          <h4 className="text-base text-secondary/90 italic">
+            3. Prepare a Thoughtful Menu
+          </h4>
           <p className="text-base text-secondary/60 leading-snug">
-            As lunchtime approaches, the kitchen springs to life as orders start
-            to come in. The line cooks work in harmony, each responsible for a
-            specific station—grilling, sautéing, plating—while the expeditor
-            orchestrates the flow of dishes from the kitchen to the dining room.
-            Despite the fast pace, attention to detail is paramount, as each
-            dish must meet the exacting standards of the chef before it leaves
-            the kitchen.
-          </p>
-          <h4 className="text-base text-secondary/90 italic">Afternoon Lull</h4>
-          <p className="text-base text-secondary/60 leading-snug">
-            After the lunch rush subsides, there&apos;s a brief lull in the
-            kitchen as the team regroups and prepares for the evening service.
-            This is a time for cleaning, restocking, and refining techniques, as
-            well as experimenting with new recipes and menu ideas. The kitchen
-            is a hive of activity as chefs collaborate and brainstorm, pushing
-            the boundaries of culinary creativity.
+            When planning your menu, aim for a balance of flavors, textures, and
+            colors that will appeal to a variety of palates. Choose dishes that
+            can be prepared in advance or require minimal last-minute assembly,
+            allowing you to spend more time enjoying the company of your guests.
+            Consider offering a mix of appetizers, salads, main courses, and
+            desserts, and don&apos;t forget to include options for any
+            vegetarians or vegans in attendance.
           </p>
         </div>
       </div>
@@ -117,42 +126,45 @@ const Hero = () => {
       />
       <div className="max-w-2xl py-16 mx-auto flex flex-col gap-4">
         <p className="text-base text-secondary/60 leading-snug">
-          Have you ever wondered what goes on behind the scenes in a bustling
-          restaurant kitchen? From the sizzle of pans to the aroma of fresh
-          herbs, the world of professional cooking is a symphony of sights,
-          sounds, and flavors. In this article, we&apos;ll take you behind the
-          scenes at Grace, offering a glimpse into the daily life of a chef and
-          the artistry that goes into creating exquisite culinary experiences.
+          There&apos;s something truly special about gathering friends and loved
+          ones together for a dinner party at home. From the warm ambiance to
+          the delicious food and lively conversation, hosting a dinner party
+          allows you to create cherished memories and celebrate life&apos;s
+          simple pleasures. In this article, we&apos;ll share some expert tips
+          for throwing an elegant dinner party that will impress your guests and
+          make you feel like a seasoned host.
+        </p>
+        <h4 className="text-base text-secondary/90 italic">1. Plan Ahead</h4>
+        <p className="text-base text-secondary/60 leading-snug">
+          The key to a successful dinner party is careful planning. Start by
+          selecting a date and sending out invitations well in advance, giving
+          your guests plenty of time to RSVP. Consider the size of your space
+          and the number of guests you can comfortably accommodate, and plan
+          your menu accordingly. Take into account any dietary restrictions or
+          preferences your guests may have, and tailor your menu to accommodate
+          them.
+        </p>
+        <h4 className="text-base text-secondary/90 italic">2. Set the Scene</h4>
+        <p className="text-base text-secondary/60 leading-snug">
+          Create a welcoming atmosphere by setting a beautiful table that
+          reflects your personal style and the theme of your dinner party.
+          Invest in quality linens, tableware, and centerpiece arrangements that
+          will set the tone for the evening. Consider adding candles or string
+          lights to create a warm, inviting glow, and don&apos;t forget to set
+          out small touches like place cards and napkin rings to add an extra
+          layer of elegance.
         </p>
         <h4 className="text-base text-secondary/90 italic">
-          Early Morning Prep
+          3. Prepare a Thoughtful Menu
         </h4>
         <p className="text-base text-secondary/60 leading-snug">
-          The day at Grace begins bright and early, as the kitchen team arrives
-          to prepare for the day ahead. The executive chef leads the morning
-          briefing, discussing the day&apos;s specials, reviewing reservations,
-          and delegating tasks to the kitchen staff. Meanwhile, prep cooks
-          busily chop vegetables, prepare sauces, and marinate meats, ensuring
-          that everything is ready for service.
-        </p>
-        <h4 className="text-base text-secondary/90 italic">Lunch Service</h4>
-        <p className="text-base text-secondary/60 leading-snug">
-          As lunchtime approaches, the kitchen springs to life as orders start
-          to come in. The line cooks work in harmony, each responsible for a
-          specific station—grilling, sautéing, plating—while the expeditor
-          orchestrates the flow of dishes from the kitchen to the dining room.
-          Despite the fast pace, attention to detail is paramount, as each dish
-          must meet the exacting standards of the chef before it leaves the
-          kitchen.
-        </p>
-        <h4 className="text-base text-secondary/90 italic">Afternoon Lull</h4>
-        <p className="text-base text-secondary/60 leading-snug">
-          After the lunch rush subsides, there&apos;s a brief lull in the
-          kitchen as the team regroups and prepares for the evening service.
-          This is a time for cleaning, restocking, and refining techniques, as
-          well as experimenting with new recipes and menu ideas. The kitchen is
-          a hive of activity as chefs collaborate and brainstorm, pushing the
-          boundaries of culinary creativity.
+          When planning your menu, aim for a balance of flavors, textures, and
+          colors that will appeal to a variety of palates. Choose dishes that
+          can be prepared in advance or require minimal last-minute assembly,
+          allowing you to spend more time enjoying the company of your guests.
+          Consider offering a mix of appetizers, salads, main courses, and
+          desserts, and don&apos;t forget to include options for any vegetarians
+          or vegans in attendance.
         </p>
       </div>
     </div>
