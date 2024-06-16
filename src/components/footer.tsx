@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 import { playfair } from "./aboutUs";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -35,7 +36,7 @@ const Footer = () => {
         >
           <p>Home</p>
           <p>Blog</p>
-          <p>Privacy Policy</p>
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
       <div className="border-dashed border-subOrange border-b">

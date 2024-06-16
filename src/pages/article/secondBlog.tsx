@@ -17,12 +17,7 @@ const Article = () => {
       <div className="border-b border-dashed border-subOrange">
         <Header />
         <Hero />
-        <Blog
-          border
-          query={article as string}
-          changed="Similar Articles
-"
-        />
+        <Blog border query={article as string} changed="Similar Articles" />
       </div>
       <Footer />
     </main>

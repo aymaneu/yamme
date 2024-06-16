@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
 import React from "react";
-import piko from "@/../public/foodie.jpeg";
+import piko from "@/../public/dish.jpeg";
 import { cn } from "@/utils/cn";
 import { playfair } from "@/components/aboutUs";
 import { motion } from "framer-motion";
@@ -61,7 +61,7 @@ const Hero = () => {
             duration: 2.2,
             bounce: true,
           }}
-          src={"/thirdBlog.jpeg"}
+          src={"/forthBlog.jpeg"}
         />
       </div>
       <div className="max-w-2xl mx-auto">
