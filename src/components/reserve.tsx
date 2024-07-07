@@ -7,6 +7,7 @@ import Clock from "./icons/clock";
 import Person from "./icons/person";
 import PoweredBy from "./icons/poweredBy";
 import SmallArrow from "./icons/smallArrow";
+import Link from "next/link";
 const Reserve = () => {
   const carouselRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -87,14 +88,21 @@ const Reserve = () => {
               (123) 456 7890
             </p>
           </div>
-          <button
-            className={cn(
-              "border w-fit px-14 hover:border-subOrange hover:text-subOrange py-2 rounded-md border-black",
-              playfair.className
-            )}
+          <Link
+            target="_blank"
+            href={
+              "https://www.google.com/maps?ll=33.595338,-7.512154&z=14&t=m&hl=en&gl=MA&mapclient=embed&cid=11406356656287217128"
+            }
           >
-            Get Direction
-          </button>
+            <button
+              className={cn(
+                "border w-fit px-14 hover:border-subOrange hover:text-subOrange py-2 rounded-md border-black",
+                playfair.className
+              )}
+            >
+              Get Direction
+            </button>
+          </Link>
         </div>
         <iframe
           className="h-full border border-dashed border-subOrange rounded-xl"
