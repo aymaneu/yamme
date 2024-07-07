@@ -13,7 +13,7 @@ const Article = () => {
   const { article } = router;
   console.log(article);
   return (
-    <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
+    <main className="md:max-w-5xl max-w-md h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <div className="border-b border-dashed border-subOrange">
         <Header />
         <Hero />
@@ -28,7 +28,7 @@ export default Article;
 
 const Hero = () => {
   return (
-    <div className="pt-28">
+    <div className="pt-28 px-5 md:px-0">
       <p
         className={cn("text-center text-subOrange text-lg", playfair.className)}
       >
@@ -52,9 +52,20 @@ const Hero = () => {
         that have shaped the
         <br /> dining landscape over the centuries.
       </p>
-      <div className="w-full shadow-xl shadow-subOrange/20 mt-14 rounded-xl h-[30rem] max-w-[60rem] mx-auto overflow-clip">
+      <div className="w-full shadow-xl shadow-subOrange/20 mt-14 rounded-xl h-[20rem] relative md:h-[30rem] max-w-[60rem] mx-auto overflow-clip">
         <motion.img
-          className="rounded-xl"
+          className="rounded-xl object-top h-[30rem] block md:hidden md:h-full absolute  object-cover w-full"
+          initial={{ translateY: 0 }}
+          animate={{ translateY: -150 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 2.2,
+            bounce: true,
+          }}
+          src={"/firstBlog.webp"}
+        />
+        <motion.img
+          className="rounded-xl hidden md:block"
           initial={{ translateY: 0 }}
           animate={{ translateY: -150 }}
           transition={{
@@ -107,7 +118,7 @@ const Hero = () => {
         </div>
       </div>
       <Image
-        className="max-w-2xl h-[28rem] object-cover rounded-xl mx-auto"
+        className="md:max-w-2xl h-[28rem] object-cover rounded-xl mx-auto"
         src={piko}
         alt="image"
         width={800}

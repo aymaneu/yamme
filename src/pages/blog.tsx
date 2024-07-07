@@ -5,7 +5,7 @@ import React from "react";
 
 const blog = () => {
   return (
-    <div className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
+    <div className="md:max-w-5xl max-w-md h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <Header />
       <div className="pt-28">
         <Blog changed="Our Blog" blogPage />

@@ -13,7 +13,7 @@ const Article = () => {
   const { article } = router;
   console.log(article);
   return (
-    <main className="max-w-5xl h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
+    <main className="md:max-w-5xl max-w-md h-full min-h-screen border-r border-l border-dashed border-subOrange mx-auto">
       <div className="border-b border-dashed border-subOrange">
         <Header />
         <Hero />
