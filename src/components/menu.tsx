@@ -88,16 +88,19 @@ const Menu = () => {
             >
               {content[0].label}
             </p>
-            <div ref={appetizersRef} className="flex px-28 flex-col gap-7">
+            <div
+              ref={appetizersRef}
+              className="flex md:px-28 px-10 flex-col gap-7"
+            >
               {content[0].info.map((k) => {
                 return (
                   <motion.div
                     whileHover="hover"
-                    className="flex cursor-pointer gap-8 justify-between"
+                    className="flex flex-col md:flex-row cursor-pointer gap-8 justify-between"
                     key={k.label}
                   >
                     <motion.div
-                      className="w-52 h-36 z-10 shrink-0"
+                      className="md:w-52 w-full md:h-36 h-52 z-10 shrink-0"
                       transition={{ ease: "easeInOut", duration: 0.4 }}
                       variants={{ hover: { scale: 1.2 } }}
                     >
@@ -106,7 +109,7 @@ const Menu = () => {
                         alt="image"
                         width={300}
                         height={300}
-                        className="w-52 shrink-0 h-36 object-cover rounded-md"
+                        className="md:w-52 w-full shrink-0 md:h-36 h-52 object-cover rounded-md"
                       />
                     </motion.div>
                     <div className="grow">
@@ -137,16 +140,16 @@ const Menu = () => {
             >
               {content[1].label}
             </p>
-            <div ref={saladsRef} className="flex px-28 flex-col gap-7">
+            <div ref={saladsRef} className="flex md:px-28 px-10 flex-col gap-7">
               {content[1].info.map((k) => {
                 return (
                   <motion.div
                     whileHover="hover"
-                    className="flex cursor-pointer gap-8 justify-between"
+                    className="flex flex-col md:flex-row cursor-pointer gap-8 justify-between"
                     key={k.label}
                   >
                     <motion.div
-                      className="w-52 h-36 z-10 shrink-0"
+                      className="md:w-52 w-full md:h-36 h-52 z-10 shrink-0"
                       transition={{ ease: "easeInOut", duration: 0.4 }}
                       variants={{ hover: { scale: 1.2 } }}
                     >
@@ -155,7 +158,7 @@ const Menu = () => {
                         alt="image"
                         width={300}
                         height={300}
-                        className="w-52 shrink-0 h-36 object-cover rounded-md"
+                        className="md:w-52 w-full shrink-0 md:h-36 h-52 object-cover rounded-md"
                       />
                     </motion.div>
                     <div className="grow">
@@ -186,16 +189,19 @@ const Menu = () => {
             >
               {content[2].label}
             </p>
-            <div ref={entreesRef} className="flex px-28 flex-col gap-7">
+            <div
+              ref={entreesRef}
+              className="flex md:px-28 px-10 flex-col gap-7"
+            >
               {content[2].info.map((k) => {
                 return (
                   <motion.div
                     whileHover="hover"
-                    className="flex cursor-pointer gap-8 justify-between"
+                    className="flex flex-col md:flex-row cursor-pointer gap-8 justify-between"
                     key={k.label}
                   >
                     <motion.div
-                      className="w-52 h-36 z-10 shrink-0"
+                      className="md:w-52 w-full md:h-36 h-52 z-10 shrink-0"
                       transition={{ ease: "easeInOut", duration: 0.4 }}
                       variants={{ hover: { scale: 1.2 } }}
                     >
@@ -204,7 +210,7 @@ const Menu = () => {
                         alt="image"
                         width={300}
                         height={300}
-                        className="w-52 shrink-0 h-36 object-cover rounded-md"
+                        className="md:w-52 w-full shrink-0 md:h-36 h-52 object-cover rounded-md"
                       />
                     </motion.div>
                     <div className="grow">
@@ -235,16 +241,16 @@ const Menu = () => {
             >
               {content[3].label}
             </p>
-            <div ref={sidesRef} className="flex px-28 flex-col gap-7">
+            <div ref={sidesRef} className="flex md:px-28 px-10 flex-col gap-7">
               {content[3].info.map((k) => {
                 return (
                   <motion.div
                     whileHover="hover"
-                    className="flex cursor-pointer gap-8 justify-between"
+                    className="flex flex-col md:flex-row cursor-pointer gap-8 justify-between"
                     key={k.label}
                   >
                     <motion.div
-                      className="w-52 h-36 z-10 shrink-0"
+                      className="md:w-52 w-full md:h-36 h-52 z-10 shrink-0"
                       transition={{ ease: "easeInOut", duration: 0.4 }}
                       variants={{ hover: { scale: 1.2 } }}
                     >
@@ -253,7 +259,7 @@ const Menu = () => {
                         alt="image"
                         width={300}
                         height={300}
-                        className="w-52 shrink-0 h-36 object-cover rounded-md"
+                        className="md:w-52 w-full shrink-0 md:h-36 h-52 object-cover rounded-md"
                       />
                     </motion.div>
                     <div className="grow">
@@ -284,16 +290,19 @@ const Menu = () => {
             >
               {content[4].label}
             </p>
-            <div ref={dessertsRef} className="flex px-28 flex-col gap-7">
+            <div
+              ref={dessertsRef}
+              className="flex md:px-28 px-10 flex-col gap-7"
+            >
               {content[4].info.map((k) => {
                 return (
                   <motion.div
                     whileHover="hover"
-                    className="flex cursor-pointer gap-8 justify-between"
+                    className="flex flex-col md:flex-row cursor-pointer gap-8 justify-between"
                     key={k.label}
                   >
                     <motion.div
-                      className="w-52 h-36 z-10 shrink-0"
+                      className="md:w-52 w-full md:h-36 h-52 z-10 shrink-0"
                       transition={{ ease: "easeInOut", duration: 0.4 }}
                       variants={{ hover: { scale: 1.2 } }}
                     >
@@ -302,7 +311,7 @@ const Menu = () => {
                         alt="image"
                         width={300}
                         height={300}
-                        className="w-52 shrink-0 h-36 object-cover rounded-md"
+                        className="md:w-52 w-full shrink-0 md:h-36 h-52 object-cover rounded-md"
                       />
                     </motion.div>
                     <div className="grow">
