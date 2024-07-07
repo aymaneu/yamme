@@ -35,7 +35,7 @@ const Reserve = () => {
       <div className="grid max-w-4xl gap-5 mx-auto py-16 md:grid-cols-3 justify-items-center">
         <div className="border justify-around flex flex-col border-dashed max-w-64 w-full border-subOrange rounded-xl py-2 px-4">
           <p className="text-lg font-bold text-center">Make a Reservation</p>
-          <div className="border border-secondary/50 rounded-md">
+          <div className="border border-secondary/50 pt-1 rounded-md">
             <div className="flex items-center justify-between px-3 py-2 border-b border-secondary/50">
               <p className="flex items-center font-medium gap-2">
                 <Calendar className="w-5" />
