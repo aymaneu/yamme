@@ -38,7 +38,7 @@ const Contact = () => {
               playfair.className
             )}
           >
-            info@grace.com
+            name.aymanelgad@gmail.com
           </p>
         </div>
         <div className="md:border-l py-5 md:py-0 border-b w-full text-center md:text-start md:border-b-0 px-5 border-dashed border-subOrange">

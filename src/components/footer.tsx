@@ -16,7 +16,7 @@ const Footer = () => {
       </p>
       <p className="text-center">
         Grace is a culinary sanctuary nestled in the heart of New York, where
-        <br />
+        <br className="md:block hidden" />
         refined elegance meets unparalleled gastronomy.
       </p>
       <div className="border-t border-b border-subOrange border-dashed max-w-lg mx-auto my-10 py-10">
@@ -40,19 +40,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-dashed border-subOrange border-b">
-        <div className="max-w-3xl flex mx-auto pb-10 justify-around">
-          <div className="px-5">
-            <p className="text-subOrange">Email:</p>
+        <div className="max-w-3xl flex flex-col md:flex-row items-center md:items-start mx-auto justify-around">
+          <div className="px-5 border-b w-full border-dashed text-center md:text-start border-subOrange md:border-b-0 py-5 md:py-0">
+            <p className="text-subOrange text-center md:text-start">Email:</p>
             <p
               className={cn(
                 "hover:text-subOrange cursor-pointer",
                 playfair.className
               )}
             >
-              aymanelgad65@gmail.com
+              name.aymanelgad@gmail.com
             </p>
           </div>
-          <div className="border-l px-5 border-dashed border-subOrange">
+          <div className="md:border-l py-5 md:py-0 border-b w-full text-center md:text-start md:border-b-0 px-5 border-dashed border-subOrange">
             <p className="text-subOrange">Phone:</p>
             <p
               className={cn(
@@ -60,11 +60,11 @@ const Footer = () => {
                 playfair.className
               )}
             >
-              (212) 06800-93003
+              (123) 456 7890
             </p>
           </div>
-          <div className="border-l px-5 border-dashed border-subOrange">
-            <p className="text-subOrange">Socials:</p>
+          <div className="md:border-l px-5 py-5 md:py-0 border-dashed border-subOrange">
+            <p className="text-subOrange text-center md:text-start">Socials:</p>
             <div className={cn("flex gap-3", playfair.className)}>
               <p className="hover:text-subOrange cursor-pointer">X/Twitter</p>
               <p className="hover:text-subOrange cursor-pointer">Instagram</p>
