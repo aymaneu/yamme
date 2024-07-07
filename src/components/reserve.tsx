@@ -102,13 +102,15 @@ const Reserve = () => {
           loading="lazy"
         />
       </div>
-      <div className="w-full rounded-xl h-[35rem] overflow-clip">
-        <motion.img
-          ref={carouselRef}
-          style={{ translateY: translateY }}
-          src={"/wine.jpeg"}
-          className="scale-125 px-8 object-bottom w-full"
-        />
+      <div className="px-8">
+        <div className="w-full rounded-xl h-[35rem] overflow-hidden">
+          <motion.img
+            ref={carouselRef}
+            style={{ translateY: translateY }}
+            src={"/wine.jpeg"}
+            className="scale-125 rounded-xl overflow-clip h-[40rem] object-cover object-center w-full"
+          />
+        </div>
       </div>
     </div>
   );

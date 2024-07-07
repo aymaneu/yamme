@@ -38,13 +38,15 @@ const Table = () => {
 
         <Button>Book a Table</Button>
       </div>
-      <div className="w-full rounded-xl h-[35rem] overflow-clip">
-        <motion.img
-          ref={carouselRef}
-          style={{ translateY: translateY }}
-          src={"/tabels.webp"}
-          className="scale-125 px-8 object-bottom w-full"
-        />
+      <div className="px-8">
+        <div className="w-full rounded-xl h-[45rem] overflow-hidden">
+          <motion.img
+            ref={carouselRef}
+            style={{ translateY: translateY }}
+            src={"/tabels.webp"}
+            className="scale-125 rounded-xl overflow-clip h-[50rem] object-cover object-center w-full"
+          />
+        </div>
       </div>
     </div>
   );
