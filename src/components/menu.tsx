@@ -115,15 +115,15 @@ const Menu = () => {
                     <div className="grow">
                       <div
                         className={cn(
-                          "flex text-subOrange text-2xl items-center",
+                          "flex text-subOrange flex-col-reverse md:flex-row border-b md:border-b-0 border-dashed pb-5 mb-5 md:pb-0 md:mb-0 border-subOrange text-2xl items-center",
                           playfair.className
                         )}
                       >
                         <p className="shrink-0">{k.label}</p>
-                        <span className="border-t border-subOrange border-dashed w-full" />
+                        <span className="border-t md:block hidden border-subOrange border-dashed w-full" />
                         <p>${k.price}</p>
                       </div>
-                      <p className="text-secondary/50 italic text-base">
+                      <p className="text-secondary/50 italic text-base text-center md:text-start">
                         {k.description}
                       </p>
                     </div>
@@ -164,15 +164,15 @@ const Menu = () => {
                     <div className="grow">
                       <div
                         className={cn(
-                          "flex text-subOrange text-2xl items-center",
+                          "flex text-subOrange flex-col-reverse md:flex-row border-b md:border-b-0 border-dashed pb-5 mb-5 md:pb-0 md:mb-0 border-subOrange text-2xl items-center",
                           playfair.className
                         )}
                       >
                         <p className="shrink-0">{k.label}</p>
-                        <span className="border-t border-subOrange border-dashed w-full" />
+                        <span className="border-t md:block hidden border-subOrange border-dashed w-full" />
                         <p>${k.price}</p>
                       </div>
-                      <p className="text-secondary/50 italic text-base">
+                      <p className="text-secondary/50 italic text-base text-center md:text-start">
                         {k.description}
                       </p>
                     </div>
@@ -216,15 +216,15 @@ const Menu = () => {
                     <div className="grow">
                       <div
                         className={cn(
-                          "flex text-subOrange text-2xl items-center",
+                          "flex text-subOrange flex-col-reverse md:flex-row border-b md:border-b-0 border-dashed pb-5 mb-5 md:pb-0 md:mb-0 border-subOrange text-2xl items-center",
                           playfair.className
                         )}
                       >
                         <p className="shrink-0">{k.label}</p>
-                        <span className="border-t border-subOrange border-dashed w-full" />
+                        <span className="border-t md:block hidden border-subOrange border-dashed w-full" />
                         <p>${k.price}</p>
                       </div>
-                      <p className="text-secondary/50 italic text-base">
+                      <p className="text-secondary/50 italic text-base text-center md:text-start">
                         {k.description}
                       </p>
                     </div>
@@ -265,15 +265,15 @@ const Menu = () => {
                     <div className="grow">
                       <div
                         className={cn(
-                          "flex text-subOrange text-2xl items-center",
+                          "flex text-subOrange flex-col-reverse md:flex-row border-b md:border-b-0 border-dashed pb-5 mb-5 md:pb-0 md:mb-0 border-subOrange text-2xl items-center",
                           playfair.className
                         )}
                       >
                         <p className="shrink-0">{k.label}</p>
-                        <span className="border-t border-subOrange border-dashed w-full" />
+                        <span className="border-t md:block hidden border-subOrange border-dashed w-full" />
                         <p>${k.price}</p>
                       </div>
-                      <p className="text-secondary/50 italic text-base">
+                      <p className="text-secondary/50 italic text-base text-center md:text-start">
                         {k.description}
                       </p>
                     </div>
@@ -317,15 +317,15 @@ const Menu = () => {
                     <div className="grow">
                       <div
                         className={cn(
-                          "flex text-subOrange text-2xl items-center",
+                          "flex text-subOrange flex-col-reverse md:flex-row border-b md:border-b-0 border-dashed pb-5 mb-5 md:pb-0 md:mb-0 border-subOrange text-2xl items-center",
                           playfair.className
                         )}
                       >
                         <p className="shrink-0">{k.label}</p>
-                        <span className="border-t border-subOrange border-dashed w-full" />
+                        <span className="border-t md:block hidden border-subOrange border-dashed w-full" />
                         <p>${k.price}</p>
                       </div>
-                      <p className="text-secondary/50 italic text-base">
+                      <p className="text-secondary/50 italic text-base text-center md:text-start">
                         {k.description}
                       </p>
                     </div>
