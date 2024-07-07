@@ -24,14 +24,14 @@ const Contact = () => {
       >
         Contact Us
       </p>
-      <p className="text-center text-secondary/50">
+      <p className="text-center pb-10 md:pb-0 text-secondary/50">
         To reserve a private dining experience or inquire about hosting an
         event, kindly reach
         <br /> out to us using the following contact information:
       </p>
-      <div className="max-w-3xl flex mx-auto justify-around">
-        <div className="px-5">
-          <p className="text-subOrange">Email:</p>
+      <div className="max-w-3xl flex flex-col md:flex-row items-center md:items-start mx-auto justify-around">
+        <div className="px-5 border-b w-full border-dashed text-center md:text-start border-subOrange md:border-b-0 py-5 md:py-0">
+          <p className="text-subOrange text-center md:text-start">Email:</p>
           <p
             className={cn(
               "hover:text-subOrange cursor-pointer",
@@ -41,7 +41,7 @@ const Contact = () => {
             info@grace.com
           </p>
         </div>
-        <div className="border-l px-5 border-dashed border-subOrange">
+        <div className="md:border-l py-5 md:py-0 border-b w-full text-center md:text-start md:border-b-0 px-5 border-dashed border-subOrange">
           <p className="text-subOrange">Phone:</p>
           <p
             className={cn(
@@ -52,8 +52,8 @@ const Contact = () => {
             (123) 456 7890
           </p>
         </div>
-        <div className="border-l px-5 border-dashed border-subOrange">
-          <p className="text-subOrange">Socials:</p>
+        <div className="md:border-l px-5 py-5 md:py-0 border-dashed border-subOrange">
+          <p className="text-subOrange text-center md:text-start">Socials:</p>
           <div className={cn("flex gap-3", playfair.className)}>
             <p className="hover:text-subOrange cursor-pointer">X/Twitter</p>
             <p className="hover:text-subOrange cursor-pointer">Instagram</p>
