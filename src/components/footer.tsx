@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between p-5">
+      <div className="flex items-center justify-between p-5">
         <p className="font-light text-secondary/70">
           designed by <span className="font-normal text-secondary">Thaer</span>{" "}
           developed by <span className="font-normal text-secondary">ayman</span>

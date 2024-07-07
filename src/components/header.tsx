@@ -17,7 +17,9 @@ const Header = () => {
         "flex fixed w-full shadow-lg shadow-subOrange/15 max-w-[calc(28rem_-_1px)] md:max-w-[calc(64rem_-_1px)] z-40 top-0 justify-between px-5 py-4"
       )}
     >
-      <p className="italic text-2xl font-semibold text-subOrange">Grace</p>
+      <Link href="/" className="italic text-2xl font-semibold text-subOrange">
+        Grace
+      </Link>
       <motion.div
         initial={{
           gap: "1rem",
