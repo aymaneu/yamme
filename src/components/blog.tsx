@@ -3,6 +3,7 @@ import Arrow from "./icons/arrow";
 import { cn } from "@/utils/cn";
 import { playfair } from "./aboutUs";
 import Link from "next/link";
+import Image from "next/image";
 
 const Blog = ({
   border = false,
@@ -33,14 +34,17 @@ const Blog = ({
           into the culinary world.
         </p>
       )}
-      <div className="flex flex-col px-28 gap-8">
+      <div className="flex flex-col md:px-28 px-5 gap-8">
         {content
           .filter((n) => n.label !== query)
           .map((j) => {
             return (
               <Link href={`/article/${j.link}`} key={j.label}>
-                <motion.div className="flex gap-5 w-full" whileHover="hovered">
-                  <div className="rounded-md shrink-0 relative overflow-x-hidden h-[15rem] w-[15rem]">
+                <motion.div
+                  className="flex md:flex-row flex-col gap-5 w-full"
+                  whileHover="hovered"
+                >
+                  <div className="rounded-md hidden md:block shrink-0 relative overflow-x-hidden h-[15rem] w-[15rem]">
                     <motion.img
                       initial={{ right: "0px" }}
                       variants={{ hovered: { right: "-30px" } }}
@@ -49,7 +53,7 @@ const Blog = ({
                       className="h-[15rem] w-[18rem] overflow-visible object-right object-cover absolute "
                     />
                   </div>
-                  <div className="text-subOrange">
+                  <div className="text-subOrange hidden md:block">
                     <div className="flex items-center w-full justify-between">
                       <p className={cn(playfair.className, "text-lg")}>
                         {j.date}
@@ -76,6 +80,37 @@ const Blog = ({
                         {j.label}
                       </p>
                       <p className="text-gray-500">{j.description}</p>
+                    </div>
+                  </div>
+                  {/* mobile version */}
+                  <div className="rounded-md md:hidden shrink-0 overflow-x-hidden h-[15rem]">
+                    <Image
+                      width={500}
+                      height={500}
+                      src={j.image}
+                      alt="image"
+                      className="h-[15rem] w-full overflow-visible object-right object-cover "
+                    />
+                  </div>
+                  <div className="text-subOrange md:hidden block">
+                    <div className="flex items-center w-full py-5 justify-between">
+                      <p className={cn(playfair.className, "text-lg")}>
+                        {j.date}
+                      </p>
+                      <Arrow className="fill-subOrange w-4" />
+                    </div>
+                    <div>
+                      <p
+                        className={cn(
+                          "border-b text-2xl pb-5 border-dashed border-subOrange",
+                          playfair.className
+                        )}
+                      >
+                        {j.label}
+                      </p>
+                      <p className="text-gray-500 text-sm py-5">
+                        {j.description}
+                      </p>
                     </div>
                   </div>
                 </motion.div>
