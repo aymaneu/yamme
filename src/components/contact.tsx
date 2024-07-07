@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="border mt-10 border-dashed border-subOrange rounded-lg p-2 max-w-2xl mx-auto">
+      <div className="border mx-2 mt-10 border-dashed border-subOrange rounded-lg p-2 max-w-2xl md:mx-auto">
         <div className="max-w-2xl px-14 mx-auto">
           <p
             className={cn(
@@ -78,7 +78,7 @@ const Contact = () => {
             return (
               <div onClick={() => handleItemClick(k)} key={j.label}>
                 <div className="flex cursor-pointer justify-between">
-                  <p>{j.label}</p>
+                  <p className="text-sm">{j.label}</p>
                   <motion.div
                     animate={{ rotate: activeItems.includes(k) ? -180 : 0 }}
                   >

@@ -54,8 +54,12 @@ const Header = () => {
         </div>
       </motion.div>
       <div className="hidden md:flex gap-3">
-        <Twitter className="w-5" />
-        <Instagram className="w-5" />
+        <Link target="_blank" href="https://x.com/kageyuza">
+          <Twitter className="w-5" />
+        </Link>
+        <Link target="_blank" href="https://www.instagram.com/kageyuza/">
+          <Instagram className="w-5" />
+        </Link>
       </div>
       <div className="hidden absolute left-1/2 -translate-x-1/2 md:flex">
         <motion.button
