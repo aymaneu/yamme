@@ -32,7 +32,7 @@ const Reserve = () => {
           <br /> joining us for an unforgettable dining experience.
         </p>
       </div>
-      <div className="grid max-w-4xl gap-5 mx-auto py-16 grid-cols-3 justify-items-center">
+      <div className="grid max-w-4xl gap-5 mx-auto py-16 md:grid-cols-3 justify-items-center">
         <div className="border justify-around flex flex-col border-dashed max-w-64 w-full border-subOrange rounded-xl py-2 px-4">
           <p className="text-lg font-bold text-center">Make a Reservation</p>
           <div className="border border-secondary/50 rounded-md">
