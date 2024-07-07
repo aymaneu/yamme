@@ -39,7 +39,7 @@ const Footer = () => {
           <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
-      <div className="border-dashed border-subOrange border-b">
+      <div className="border-dashed border-subOrange border-b pb-10">
         <div className="max-w-3xl flex flex-col md:flex-row items-center md:items-start mx-auto justify-around">
           <div className="px-5 border-b w-full border-dashed text-center md:text-start border-subOrange md:border-b-0 py-5 md:py-0">
             <p className="text-subOrange text-center md:text-start">Email:</p>
