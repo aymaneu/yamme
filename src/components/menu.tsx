@@ -64,7 +64,7 @@ const Menu = () => {
             return (
               <Link
                 className={cn(
-                  " p-2 rounded-t-md border-t border-l border-r",
+                  "p-2 text-xs min-[375px]:text-xs sm:text-sm md:text-base rounded-t-md border-t border-l border-r",
                   currentSec === i.label
                     ? "border-dashed text-subOrange border-subOrange"
                     : "border-background"

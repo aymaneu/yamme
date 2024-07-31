@@ -14,7 +14,7 @@ const Footer = () => {
       >
         Grace
       </p>
-      <p className="text-center">
+      <p className="text-center objeco">
         Grace is a culinary sanctuary nestled in the heart of New York, where
         <br className="md:block hidden" />
         refined elegance meets unparalleled gastronomy.
@@ -75,11 +75,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex items-center justify-between p-5">
-        <p className="font-light text-secondary/70">
+        <p className="font-light min-[375px]:text-xs sm:text-base text-secondary/70">
           designed by <span className="font-normal text-secondary">Thaer</span>{" "}
-          developed by <span className="font-normal text-secondary">ayman</span>
+          developed by{" "}
+          <Link
+            href="https://github.com/aymaneu"
+            className="font-normal text-secondary"
+          >
+            ayman
+          </Link>
         </p>
-        <p className="text-sm text-secondary/50">© Copyright 2024</p>
+        <p className="sm:text-sm min-[375px]:text-xs text-secondary/50">
+          © Copyright 2024
+        </p>
       </div>
     </div>
   );
