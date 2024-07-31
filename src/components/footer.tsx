@@ -66,8 +66,20 @@ const Footer = () => {
           <div className="md:border-l px-5 py-5 md:py-0 border-dashed border-subOrange">
             <p className="text-subOrange text-center md:text-start">Socials:</p>
             <div className={cn("flex gap-3", playfair.className)}>
-              <p className="hover:text-subOrange cursor-pointer">X/Twitter</p>
-              <p className="hover:text-subOrange cursor-pointer">Instagram</p>
+              <Link
+                href="https://x.com/kageyuza"
+                target="_blank"
+                className="hover:text-subOrange cursor-pointer"
+              >
+                X/Twitter
+              </Link>
+              <Link
+                href="https://www.instagram.com/kageyuza"
+                target="_blank"
+                className="hover:text-subOrange cursor-pointer"
+              >
+                Instagram
+              </Link>
               <p className="hover:text-subOrange cursor-pointer">Facebook</p>
               <p className="hover:text-subOrange cursor-pointer">TikTok</p>
             </div>
